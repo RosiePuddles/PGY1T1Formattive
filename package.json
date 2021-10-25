@@ -1,0 +1,22 @@
+{
+  "name": "pgy1t1formattive",
+  "version": "1.0.0",
+  "description": "Programming Gold formative assesment (Y1T1)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RosiePuddles/PGY1T1Formattive.git"
+  },
+  "author": "Rosie Bartlett",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/RosiePuddles/PGY1T1Formattive/issues"
+  },
+  "homepage": "https://github.com/RosiePuddles/PGY1T1Formattive#readme",
+  "dependencies": {
+    "@popperjs/core": "2.10.2"
+  }
+}
