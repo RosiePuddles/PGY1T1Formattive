@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Environmental</title>
+    <title>Reports | The Environmental</title>
     <!--  Bootstrap  -->
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -12,7 +12,6 @@
     <link href="css/bootstrap-utilities.min.css" rel="stylesheet"/>
     <!--  My stuff  -->
     <link href="css/style.css" rel="stylesheet"/>
-    <script src="js/script.js"></script>
     <link href="assets/images/favicons/120.png" rel="apple-touch-icon" sizes="120x120"/>
     <link href="assets/images/favicons/32.png" rel="icon" sizes="32x32" type="image/png"/>
     <link href="assets/images/favicons/16.png" rel="icon" sizes="16x16" type="image/png"/>
@@ -21,19 +20,20 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img alt="logo" height="50" src="assets/images/icon_small.png"/></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a aria-current="page" class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">About Us</a>
+                    <a aria-current="page" class="nav-link" href="index.html">About Us</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                    <a aria-expanded="false" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#"
                        id="reportsDropdown" role="button">
                         Reports
                     </a>
@@ -54,23 +54,7 @@
         </div>
     </div>
 </nav>
-<div class="px-4 py-5 text-center hero">
-    <img alt="logo" class="d-block mx-auto mb-4" src="assets/images/icon.png" width="80"/>
-    <h1 class="display-5 fw-bold">The Environmental</h1>
-    <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">The future of environmental research and reporting</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <a href="reports.html">
-                <button class="my_btn btn btn-outline-secondary btn-lg px-4" type="button">
-                    Read our most<br/>recent report
-                </button>
-            </a>
-            <button class="my_btn btn btn-outline-secondary btn-lg px-4" type="button">
-                Sign up
-            </button>
-        </div>
-    </div>
-</div>
+
 </body>
 <footer>
     <div class="container text-center py-3">

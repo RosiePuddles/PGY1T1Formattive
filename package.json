@@ -15,8 +15,12 @@
   "bugs": {
     "url": "https://github.com/RosiePuddles/PGY1T1Formattive/issues"
   },
-  "homepage": "https://github.com/RosiePuddles/PGY1T1Formattive#readme",
+  "homepage": "https://rosiepuddles.github.io/PGY1T1Formattive/",
   "dependencies": {
     "@popperjs/core": "2.10.2"
+  },
+  "devDependencies": {
+    "eslint": "8.1.0",
+    "stylelint": "14.0.0"
   }
 }
