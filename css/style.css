@@ -1,0 +1,31 @@
+:root {
+    --bg-01: #d5d5d5;
+    --main-col-01: #4fd0c7;
+}
+
+.navbar {
+    background-color: var(--bg-01);
+}
+
+.hero {
+    background: linear-gradient(244deg, #1cbf46, #1ca1bf, #6ca1ff);
+    background-size: 1000% 1000%;
+    animation: background-anim 20s ease infinite;
+}
+
+@keyframes background-anim {
+    0% { background-position: 4% 0; }
+
+    50% { background-position: 97% 100%; }
+
+    100% { background-position: 4% 0; }
+}
+
+footer {
+    background-color: var(--bg-01);
+}
+
+.dark_btn {
+    color: black;
+    border-color: black;
+}
