@@ -11,13 +11,14 @@
     <link href="css/bootstrap-reboot.min.css" rel="stylesheet"/>
     <link href="css/bootstrap-utilities.min.css" rel="stylesheet"/>
     <!--  My stuff  -->
+    <script src="js/script.js"></script>
     <link href="css/style.css" rel="stylesheet"/>
     <link href="assets/images/favicons/120.png" rel="apple-touch-icon" sizes="120x120"/>
     <link href="assets/images/favicons/32.png" rel="icon" sizes="32x32" type="image/png"/>
     <link href="assets/images/favicons/16.png" rel="icon" sizes="16x16" type="image/png"/>
 </head>
 <body class="d-flex flex-column min-vh-100">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img alt="logo" height="50" src="assets/images/icon_small.png"/></a>
         <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
@@ -30,7 +31,7 @@
                     <a aria-current="page" class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a aria-current="page" class="nav-link" href="index.html">About Us</a>
+                    <a aria-current="page" class="nav-link" href="about_us.html">About Us</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a aria-expanded="false" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#"
@@ -38,16 +39,16 @@
                         Reports
                     </a>
                     <ul aria-labelledby="reportsDropdown" class="dropdown-menu">
-                        <li><a class="dropdown-item" href="reports.html">All reports</a></li>
+                        <li><a class="dropdown-item" href="reports.html"><b>All reports</b></a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="co2_emissions.html">CO2 Emissions</a></li>
-                        <li><a class="dropdown-item" href="#"><i>Fertilisers</i></a></li>
+                        <li><a class="dropdown-item" href="co2_emissions.html">CO<sub>2</sub> Emissions</a></li>
+                        <li><a class="dropdown-item" href="fertilisers.html">Fertilisers</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">About our reports</a></li>
+                        <li><a class="dropdown-item" href="report_about.html">About our reports</a></li>
                     </ul>
                 </li>
             </ul>
@@ -61,16 +62,51 @@
     </div>
 </div>
 
+<div class="container py-3">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <a href="fertilisers.html">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">The effects of nitrogen poisoning on dense populations through the excessive use of industrial fertilisers</h5>
+                        <p class="card-text">The usage of fertilisers throughout the world has increased drastically and does not appear to be ...</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="co2_emissions.html">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">A comprehensive report into global carbon dioxide emissions</h5>
+                        <p class="card-text">Carbon dioxide is often used as a measure of sustainability, from the idea of carbon footprints created and popularised by BP ...</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#" onclick="randomArticle()">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card is a placeholder.<br>Bottom text</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
 </body>
 <footer class="mt-auto">
-    <div class="container text-center py-3">
+    <div class="container text-center p-3">
         <div class="col">
-            <button class="btn btn-secondary">
+            <button class="btn btn-secondary" onclick="mailingListButtonPress()">
                 Join our mailing list!
             </button>
         </div>
     </div>
-    <div class="text-center p-4">
+    <div class="text-center p-1">
         Copyright The Environmental 2021 ©
     </div>
 </footer>

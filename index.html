@@ -18,7 +18,7 @@
     <link href="assets/images/favicons/16.png" rel="icon" sizes="16x16" type="image/png"/>
 </head>
 <body class="d-flex flex-column min-vh-100">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img alt="logo" height="50" src="assets/images/icon_small.png"/></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">About Us</a>
+                    <a class="nav-link" aria-current="page" href="about_us.html">About Us</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
@@ -42,12 +42,12 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="co2_emissions.html">CO2 Emissions</a></li>
-                        <li><a class="dropdown-item" href="#"><i>Fertilisers</i></a></li>
+                        <li><a class="dropdown-item" href="co2_emissions.html">CO<sub>2</sub> Emissions</a></li>
+                        <li><a class="dropdown-item" href="fertilisers.html">Fertilisers</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">About our reports</a></li>
+                        <li><a class="dropdown-item" href="report_about.html">About our reports</a></li>
                     </ul>
                 </li>
             </ul>
@@ -61,32 +61,72 @@
         <p class="lead mb-4">The future of environmental research and reporting</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
             <a href="reports.html">
-                <button class="my_btn btn btn-outline-secondary btn-lg px-4" type="button">
+                <button class="dark-btn btn btn-outline-secondary btn-lg px-4" type="button">
                     Read our most<br/>recent report
                 </button>
             </a>
-            <button class="my_btn btn btn-outline-secondary btn-lg px-4" type="button">
+            <button class="dark-btn btn btn-outline-secondary btn-lg px-4" type="button" onclick="fakeSignUp()">
                 Sign up
             </button>
         </div>
     </div>
 </div>
-<div class="container text-center">
-    <div class="row">
-        <h1>Website in development!</h1>
-        <h3>Come back later...</h3>
+<div class="container p-5">
+    <h1 class="display-5">World-leading research</h1>
+    <p class="lead">The Environmental is leading the way in outstanding research from around the world, with members holding positions such as IPCC members or government advisory to major world countries</p>
+    <h1 class="display-5">Complete transparency</h1>
+    <p class="lead">We aspire to be completely transparent, with nothing hidden away. All of our reporting displays the author and any relevant affiliations, with report authors completing conflict of interest checks before writing anything</p>
+</div>
+<div class="container py-5">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/images/panel_meeting_1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>A meeting</h5>
+                    <p>I guess, it's a meeting? Proto credit to Ronald Yeung and Ranitri Weerasuriya (CC 2.0)</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/some_meeting_w.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>IMO Meeting</h5>
+                    <p>This actually is an IMO meeting that maybe some of our fake members were at (CC 2.0)</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/another_panel.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Our 2019 annual conference</h5>
+                    <p>Completely 100% a meeting we had in real life and not something else (CC BY-NC-SA 2.0)</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 </div>
 </body>
 <footer class="mt-auto">
-    <div class="container text-center py-3">
+    <div class="container text-center p-3">
         <div class="col">
-            <button class="btn btn-secondary">
+            <button class="btn btn-secondary" onclick="mailingListButtonPress()">
                 Join our mailing list!
             </button>
         </div>
     </div>
-    <div class="text-center p-4">
+    <div class="text-center p-1">
         Copyright The Environmental 2021 ©
     </div>
 </footer>
