@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Reports | The Environmental</title>
+    <title>The effects of nitrogen poisoning on dense populations through the excessive use of industrial fertilisers | The Environmental</title>
     <!--  Bootstrap  -->
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -10,8 +10,9 @@
     <link href="css/bootstrap-grid.min.css" rel="stylesheet"/>
     <link href="css/bootstrap-reboot.min.css" rel="stylesheet"/>
     <link href="css/bootstrap-utilities.min.css" rel="stylesheet"/>
+    <!--  FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/36cb8e86f7.js" crossorigin="anonymous"></script>
     <!--  My stuff  -->
-    <script src="js/script.js"></script>
     <link href="css/style.css" rel="stylesheet"/>
     <link href="assets/images/favicons/120.png" rel="apple-touch-icon" sizes="120x120"/>
     <link href="assets/images/favicons/32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -39,12 +40,12 @@
                         Reports
                     </a>
                     <ul aria-labelledby="reportsDropdown" class="dropdown-menu">
-                        <li><a class="dropdown-item" href="reports.html"><b>All reports</b></a></li>
+                        <li><a class="dropdown-item" href="reports.html">All reports</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
                         <li><a class="dropdown-item" href="co2_emissions.html">CO<sub>2</sub> Emissions</a></li>
-                        <li><a class="dropdown-item" href="fertilisers.html">Fertilisers</a></li>
+                        <li><a class="dropdown-item" href="fertilisers.html"><b>Fertilisers</b></a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
@@ -57,50 +58,48 @@
 </nav>
 
 <div class="container py-3">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-            <a href="fertilisers.html">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">The effects of nitrogen poisoning on dense populations through the excessive use of industrial fertilisers</h5>
-                        <p class="card-text">The usage of fertilisers throughout the world has increased drastically and does not appear to be ...</p>
-                    </div>
-                </div>
-            </a>
+    <div class="row">
+        <div class="col-3 report-body">
+            <img src="assets/reports/nitrogen_report.png" width="100%" alt="CO2 'report'">
         </div>
         <div class="col">
-            <a href="co2_emissions.html">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">A comprehensive report into global carbon dioxide emissions</h5>
-                        <p class="card-text">Carbon dioxide is often used as a measure of sustainability, from the idea of carbon footprints created and popularised by BP ...</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col">
-            <a href="#" onclick="randomArticle()">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card is a placeholder.<br>Bottom text</p>
-                    </div>
-                </div>
-            </a>
+            <h2>The effects of nitrogen poisoning on dense populations through the excessive use of industrial fertilisers</h2>
+            <p>This report looks at the short-, medium-, and long-term effects of continuous nitrogen poisoning on large populations in relation to the use of industrial fertilisers. It also looks at how we can mitigate these effects, with various possible solutions.</p>
+            <table class="table">
+                <tr>
+                    <td>Authors</td>
+                    <td>Judy Dunbar, Lukáš Tuček, Pataky Melinda</td>
+                </tr>
+                <tr>
+                    <td>Publishing date</td>
+                    <td>35<sup>th</sup> June 2022</td>
+                </tr>
+                <tr>
+                    <td>Pages</td>
+                    <td>96</td>
+                </tr>
+            </table>
+            <div class="py-2">
+                <a href="assets/reports/nitrogen_report.png">
+                    <button class="btn btn-outline-primary">
+                        <i class="fas fa-download"></i> Download the report
+                    </button>
+                </a>
+            </div>
         </div>
     </div>
 </div>
 
 </body>
 <footer class="mt-auto">
-    <div class="container text-center p-3">
+    <div class="container text-center py-3">
         <div class="col">
-            <button class="btn btn-secondary" onclick="mailingListButtonPress()">
+            <button class="btn btn-secondary">
                 Join our mailing list!
             </button>
         </div>
     </div>
-    <div class="text-center p-1">
+    <div class="text-center p-4">
         Copyright The Environmental 2021 ©
     </div>
 </footer>

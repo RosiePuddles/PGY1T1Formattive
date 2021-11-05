@@ -29,3 +29,14 @@ footer {
     color: black;
     border-color: black;
 }
+
+.report-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ccc;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
