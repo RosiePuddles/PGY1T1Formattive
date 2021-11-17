@@ -2,13 +2,13 @@
     :root {
         --bg-01: #3b3b3b;
         --main-col-01: #4fd0c7;
-        --font-col: #fff
+        --font-col: #fff;
+        --back-col: #1e1e1e;
+        --bg-02: #363636;
     }
+
     .logo {
         filter: invert(100%);
-    }
-    body {
-        background-color: #1e1e1e;
     }
 }
 
@@ -17,16 +17,14 @@
         --bg-01: #d5d5d5;
         --main-col-01: #4fd0c7;
         --font-col: #000;
-    }
-    body {
-        background-color: #fff;
+        --back-col: #fff;
+        --bg-02: #f6f6f6;
     }
 }
 
-/*:root {*/
-/*    --bg-01: #d5d5d5;*/
-/*    --main-col-01: #4fd0c7;*/
-/*}*/
+body {
+    background: var(--back-col);
+}
 
 .navbar {
     background-color: var(--bg-01);
@@ -72,4 +70,8 @@ a {
 
 .dropdown-item .nav-link {
     color: var(--font-col);
+}
+
+.about_card {
+    background: var(--bg-02);
 }
