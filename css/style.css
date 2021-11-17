@@ -1,7 +1,32 @@
-:root {
-    --bg-01: #d5d5d5;
-    --main-col-01: #4fd0c7;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-01: #3b3b3b;
+        --main-col-01: #4fd0c7;
+        --font-col: #fff
+    }
+    .logo {
+        filter: invert(100%);
+    }
+    body {
+        background-color: #1e1e1e;
+    }
 }
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-01: #d5d5d5;
+        --main-col-01: #4fd0c7;
+        --font-col: #000;
+    }
+    body {
+        background-color: #fff;
+    }
+}
+
+/*:root {*/
+/*    --bg-01: #d5d5d5;*/
+/*    --main-col-01: #4fd0c7;*/
+/*}*/
 
 .navbar {
     background-color: var(--bg-01);
@@ -39,4 +64,12 @@ footer {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+* {
+    color: var(--font-col);
+}
+
+.dropdown-item .nav-link {
+    color: var(--font-col);
 }
