@@ -101,7 +101,11 @@ a {
     color: var(--font-col);
 }
 
-.about_card .card {
+.about_card {
+    background: var(--bg-02);
+}
+
+.card {
     background: var(--bg-02);
 }
 
