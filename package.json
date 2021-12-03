@@ -17,7 +17,8 @@
   },
   "homepage": "https://rosiepuddles.github.io/PGY1T1Formattive/",
   "dependencies": {
-    "@popperjs/core": "2.10.2"
+    "@popperjs/core": "2.10.2",
+    "d3": "^7.1.1"
   },
   "devDependencies": {
     "eslint": "8.1.0",
