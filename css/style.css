@@ -5,6 +5,9 @@
         --font-col: #fff;
         --back-col: #1e1e1e;
         --bg-02: #363636;
+        --hero-back0: #30a94d;
+        --hero-back1: #146f83;
+        --hero-back2: #1c3f86;
     }
 
     .logo {
@@ -19,6 +22,9 @@
         --font-col: #000;
         --back-col: #fff;
         --bg-02: #f6f6f6;
+        --hero-back0: #1cbf46;
+        --hero-back1: #1ca1bf;
+        --hero-back2: #6ca1ff;
     }
 }
 
@@ -31,7 +37,7 @@ body {
 }
 
 .hero {
-    background: linear-gradient(244deg, #1cbf46, #1ca1bf, #6ca1ff);
+    background: linear-gradient(244deg, var(--hero-back0), var(--hero-back1), var(--hero-back2));
     background-size: 1000% 1000%;
     animation: background-anim 20s ease infinite;
 }
