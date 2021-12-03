@@ -17,40 +17,14 @@
     <link href="assets/images/favicons/32.png" rel="icon" sizes="32x32" type="image/png"/>
     <link href="assets/images/favicons/16.png" rel="icon" sizes="16x16" type="image/png"/>
 </head>
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100" onload="loadNavBar()">
 <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand logo" href="index.html"><img alt="logo" height="50" src="assets/images/icon_small.webp"/></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navCollapseButton">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="about_us.html">About Us</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
-                       id="reportsDropdown" role="button">
-                        Reports
-                    </a>
-                    <ul aria-labelledby="reportsDropdown" class="dropdown-menu">
-                        <li><a class="dropdown-item" href="reports.html">All reports</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="co2_emissions.html">CO<sub>2</sub> Emissions</a></li>
-                        <li><a class="dropdown-item" href="fertilisers.html">Fertilisers</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="report_about.html">About our reports</a></li>
-                    </ul>
-                </li>
-            </ul>
         </div>
     </div>
 </nav>
@@ -60,11 +34,9 @@
     <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">The future of environmental research and reporting</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <a href="reports.html">
-                <button class="dark-btn btn btn-outline-secondary btn-lg px-4" type="button">
-                    Read our most<br/>recent report
-                </button>
-            </a>
+            <button class="dark-btn btn btn-outline-secondary btn-lg px-4" type="button" href="reports.html">
+                Read our most<br/>recent report
+            </button>
             <button class="dark-btn btn btn-outline-secondary btn-lg px-4" type="button" onclick="fakeSignUp()">
                 Sign up
             </button>
