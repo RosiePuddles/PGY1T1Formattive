@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Environmental | Uh oh...</title>
+    <!--  Bootstrap  -->
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap-utilities.min.css" rel="stylesheet"/>
+    <!--  My stuff  -->
+    <link href="css/style.css" rel="stylesheet"/>
+    <script src="js/script.js"></script>
+    <link href="assets/images/favicons/120.png" rel="apple-touch-icon" sizes="120x120"/>
+    <link href="assets/images/favicons/32.png" rel="icon" sizes="32x32" type="image/png"/>
+    <link href="assets/images/favicons/16.png" rel="icon" sizes="16x16" type="image/png"/>
+</head>
+<body class="d-flex flex-column min-vh-100">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand logo" href="index.html"><img alt="logo" height="50" src="assets/images/icon_small.webp"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="about_us.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                       id="reportsDropdown" role="button">
+                        Reports
+                    </a>
+                    <ul aria-labelledby="reportsDropdown" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="reports.html">All reports</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="co2_emissions.html">CO<sub>2</sub> Emissions</a></li>
+                        <li><a class="dropdown-item" href="fertilisers.html">Fertilisers</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="report_about.html">About our reports</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container p-5 text-center">
+    <h1 class="display-1">Uh oh...</h1>
+    <h4 class="display-5">It looks like the page you were looking for doesn't exist...</h4>
+    <p class="lead">Side note, if you got here from trying to find our privacy policy, that was intentional. We don't have one and will sell as much of your personal data we can harvest to just about anyone</p>
+</div>
+</body>
+<footer class="mt-auto">
+    <div class="container text-center p-3">
+        <div class="col">
+            <button class="btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                Join our mailing list!
+            </button>
+        </div>
+    </div>
+    <div class="text-center p-1">
+        Copyright The Environmental 2021 ©
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="SignUpModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SignUpModal">Join our mailing list</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>We don't send a lot of emails, and will only send you important news.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="col-form-label">Name:</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                    </form>
+                    <a href="">Read our privacy policy here</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
