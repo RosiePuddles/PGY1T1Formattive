@@ -1,6 +1,35 @@
-:root {
-    --bg-01: #d5d5d5;
-    --main-col-01: #4fd0c7;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-01: #3b3b3b;
+        --main-col-01: #4fd0c7;
+        --font-col: #fff;
+        --back-col: #1e1e1e;
+        --bg-02: #363636;
+        --hero-back0: #30a94d;
+        --hero-back1: #146f83;
+        --hero-back2: #1c3f86;
+    }
+
+    .logo {
+        filter: invert(100%);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-01: #d5d5d5;
+        --main-col-01: #4fd0c7;
+        --font-col: #000;
+        --back-col: #fff;
+        --bg-02: #f6f6f6;
+        --hero-back0: #1cbf46;
+        --hero-back1: #1ca1bf;
+        --hero-back2: #6ca1ff;
+    }
+}
+
+body {
+    background: var(--back-col);
 }
 
 .navbar {
@@ -8,7 +37,7 @@
 }
 
 .hero {
-    background: linear-gradient(244deg, #1cbf46, #1ca1bf, #6ca1ff);
+    background: linear-gradient(244deg, var(--hero-back0), var(--hero-back1), var(--hero-back2));
     background-size: 1000% 1000%;
     animation: background-anim 20s ease infinite;
 }
@@ -39,4 +68,55 @@ footer {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+* {
+    color: var(--font-col);
+}
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    padding-top: 30px;
+}
+
+.modal-body {
+    background: var(--bg-02);
+}
+
+.modal-footer {
+    background: var(--bg-02);
+}
+
+.modal-header {
+    background: var(--bg-02);
+}
+
+.nav-link {
+    color: var(--font-col);
+}
+
+.nav-link:hover {
+    color: var(--font-col);
+}
+
+.about_card .card {
+    background: var(--bg-02);
+}
+
+.invalid_input {
+    border-color: #d23d47;
+}
+
+input {
+    border: 2px;
+}
+
+::placeholder {
+    color: #d23d47;
+}
+
+::-ms-input-placeholder {
+    color: #d23d47;
 }

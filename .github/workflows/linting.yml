@@ -9,5 +9,3 @@ jobs:
         run: npm install
       - name: Run ESLint
         run: npx eslint ./js/script.js
-      - name: Run StyleLint
-        run: npx stylelint ./css/style.css

@@ -1,6 +1,12 @@
 # The Environmental
 > An example website focussing on climate change for my formative assessment of the programming gold module (year 1 term 1)
 
+This site includes:
+- Multiple dedicated pages
+- Favicons!
+- Dynamic colour themes for light and dark colour themes
+
+### Contents
 - [Running](#runninginstalling)
 - [Acknowledgements](#acknowledgements)
 
