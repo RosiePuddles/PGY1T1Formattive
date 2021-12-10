@@ -2,9 +2,9 @@
   "name": "pgy1t1formattive",
   "version": "1.0.0",
   "description": "Programming Gold formative assesment (Y1T1)",
-  "main": "index.js",
+  "main": "js/script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Ha. as if\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,7 @@
   },
   "homepage": "https://rosiepuddles.github.io/PGY1T1Formattive/",
   "dependencies": {
-    "@popperjs/core": "2.10.2",
-    "d3": "^7.1.1"
+    "@popperjs/core": "2.10.2"
   },
   "devDependencies": {
     "eslint": "8.1.0",
