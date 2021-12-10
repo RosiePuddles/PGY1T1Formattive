@@ -47,6 +47,10 @@ function signUpSelect() {
     }
 }
 
+/**
+ *
+ * @param node
+ */
 function myReset(node) {
     node.classList.remove("invalid_input");
 }
@@ -73,7 +77,7 @@ function loadNavBar() {
             <li>
                 <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item" href="co2_emissions.html">CO<sub>2</sub> Emissions</a></li>
+            <li><a class="dropdown-item" href="co2_emissions.html">CO₂ Emissions</a></li>
             <li><a class="dropdown-item" href="fertilisers.html">Fertilisers</a></li>
             <li>
                 <hr class="dropdown-divider">
