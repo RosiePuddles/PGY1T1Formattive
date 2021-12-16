@@ -62,7 +62,7 @@ function loadNavBar() {
     document.getElementById('navbarSupportedContent').innerHTML = `
 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
     <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        <a class="nav-link" aria-current="page" href="index.html">Home</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" aria-current="page" href="about_us.html">About Us</a>
@@ -84,6 +84,9 @@ function loadNavBar() {
             </li>
             <li><a class="dropdown-item" href="report_about.html">About our reports</a></li>
         </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="visual.html">Visualise</a>
     </li>
 </ul>
 `;

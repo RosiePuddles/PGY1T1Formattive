@@ -1,6 +1,7 @@
 /**
  * File That's only used for data visualisation using D3
  * Code from https://www.d3-graph-gallery.com/graph/choropleth_basic.html
+ * Minor alterations made to the main body of code, with additions to use a local dataset and colour scheme
  */
 
 // The svg
@@ -11,8 +12,7 @@ const svg = d3.select("svg"),
 // Map and projection
 const path = d3.geoPath();
 const projection = d3.geoNaturalEarth1()
-    .scale(150)
-    .center([0,20])
+    .center([0,0])
     .translate([width / 2, height / 2]);
 
 // Data and color scale
