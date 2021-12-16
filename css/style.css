@@ -5,6 +5,8 @@
         --font-col: #fff;
         --back-col: #1e1e1e;
         --bg-02: #363636;
+        --sub-nav-back: #626262;
+        --sub-nav-back-highlight: #8a8a8a;
         --hero-back0: #30a94d;
         --hero-back1: #146f83;
         --hero-back2: #1c3f86;
@@ -22,6 +24,8 @@
         --font-col: #000;
         --back-col: #fff;
         --bg-02: #f6f6f6;
+        --sub-nav-back: #fff;
+        --sub-nav-back-highlight: #e9ecef;
         --hero-back0: #1cbf46;
         --hero-back1: #1ca1bf;
         --hero-back2: #6ca1ff;
@@ -101,7 +105,24 @@ a {
     color: var(--font-col);
 }
 
-.about_card .card {
+.dropdown-menu {
+    background: var(--sub-nav-back);
+}
+
+.dropdown-item {
+    color: var(--font-col);
+}
+
+.dropdown-item:hover {
+    background: var(--sub-nav-back-highlight);
+    transition: 0.2s;
+}
+
+.about_card {
+    background: var(--bg-02);
+}
+
+.card {
     background: var(--bg-02);
 }
 

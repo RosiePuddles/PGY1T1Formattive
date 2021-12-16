@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Our reports | The Environmental</title>
+    <title>Visualise | The Environmental</title>
     <!--  Bootstrap  -->
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -11,6 +11,8 @@
     <link href="css/bootstrap-grid.min.css" rel="stylesheet"/>
     <link href="css/bootstrap-reboot.min.css" rel="stylesheet"/>
     <link href="css/bootstrap-utilities.min.css" rel="stylesheet"/>
+    <!--  D3  -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <!--  My stuff  -->
     <link href="css/style.css" rel="stylesheet"/>
     <script src="js/script.js"></script>
@@ -29,16 +31,20 @@
         </div>
     </div>
 </nav>
-
-<div class="container py-3">
-    <h1 class="display-5">What our reports are</h1>
-    <p>Our reports are independently funded reports written by individuals with specialist knowledge in the area they're writing about. They are comprehensive and often take many months of research to complete, with a vetting process before we publish anything.</p>
-    <h1 class="display-5">Conflicts of interest</h1>
-    <p>We fund out research through anonymous donations, and ensure that no individual working on a report has any possible conflicts of interest with the contents or subject of the report. In the event of an individual having been found to have a conflict of interest after a report has been published, the report will be retracted and put up for review by an independent review panel to assess any sections of the report that may have been affected by this conflict of interest. If none can be found the report is un-retracted.</p>
-    <h1 class="display-5">Who can use our reports?</h1>
-    <p>All of our reports are free to use and ready by anyone. Anyone is more than welcome to reference any of our work or quote anything provided the report is referenced and credited appropriately.</p>
+<div class="container">
+    <h1>The world in pictures</h1>
+    <h2>CO<sub>2</sub> by population size</h2>
+    <p>
+        To illustrate a common misconception about certain countries emitting more CO<sub>2</sub> than others, specifically Russia and China, the map below shows each country's share of global carbon emissions as a proportion of it's share of global population. Ideally, this number would be 1, when a country emits the same proportion of global CO<sub>2</sub> as it has people. Of all thr countries included, the closest to having a score of 1 was Tanzania with 0.928. Out of interest, the lowest scoring country was Burundi at 0.144.<br/>
+        The scale for this choropleth is the greener the colour, the better; and the pinker, the worse.
+    </p>
+    <div class="align-content-center">
+        <svg id="my_dataviz" width="947.47" height="491.02">
+            <use xlink:href="#square" transform="scale(20)"/>
+        </svg>
+    </div>
 </div>
-
+<script src="js/visualise.js"></script>
 </body>
 <footer class="mt-auto">
     <div class="container text-center p-3">
