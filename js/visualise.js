@@ -23,7 +23,8 @@ const colorScale = d3.scaleLinear()
 
 // Load external data and boot
 Promise.all([
-    d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
+    // world.geojson is from https://github.com/holtzy/D3-graph-gallery/blob/master/DATA/world.geojson
+    d3.json("assets/data/world.geojson"),
     d3.csv("assets/data/share-co2-emissions-vs-population.csv", {typed: true}, function(d) {
         if (d.Code) {
             data.set(d.Code, 20 * d.co2 / d.popn)
