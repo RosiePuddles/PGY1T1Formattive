@@ -115,15 +115,15 @@ function svgSize(svg) {
 function resizeSVG() {
     let width = document.getElementById("svg_parent").clientWidth;
     let svg = document.getElementById("find_me");
-    let svg_body = d3.select("g");
+    let svgBody = d3.select("g");
     if (width < subWidth) {
         svg.style.width = "" + width;
         svg.style.height = "" + 491.02 * width / subWidth;
-        svg_body.attr("transform", "scale(" + width / subWidth + ") translate(0,0)");
+        svgBody.attr("transform", "scale(" + width / subWidth + ") translate(0,0)");
     } else {
         svg.style.width = "" + width;
         svg.style.height = "" + 491.02;
-        svg_body.attr("transform", "scale(1) translate(" + (width - subWidth) / 2 + ", 0)")
+        svgBody.attr("transform", "scale(1) translate(" + (width - subWidth) / 2 + ", 0)");
 
     }
 }
