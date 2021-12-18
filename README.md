@@ -5,6 +5,7 @@ This site includes:
 - Multiple dedicated pages
 - Favicons!
 - Dynamic colour themes for light and dark colour themes
+- Data visualisation using choropleths made with D3
 
 ### Contents
 - [Running](#runninginstalling)

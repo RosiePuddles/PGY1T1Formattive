@@ -1,24 +1,29 @@
 /**
  * File That's only used for data visualisation using D3
  * Code from https://www.d3-graph-gallery.com/graph/choropleth_basic.html
- * Minor alterations made to the main body of code, with additions to use a local dataset and colour scheme
+ * Additions and alterations made to allow the svg to be correctly sized upon loading
  */
 
 // The svg
 const svg = d3.select("svg"),
-    width = +svg.attr("width"),
+    subWidth = 947.47,
     height = +svg.attr("height");
 
 // Map and projection
+width = document.getElementById("svg_parent").clientWidth;
 const path = d3.geoPath();
-const projection = d3.geoNaturalEarth1()
-    .center([0,0])
-    .translate([width / 2, height / 2]);
+const projection = d3.geoNaturalEarth1().center([0,0]);
+
+if (width < subWidth) {
+    projection.translate([subWidth / 2, height / 2]);
+} else {
+    projection.translate([width / 2, height / 2]);
+}
 
 // Data and color scale
-let data = new Map()
+let data = new Map();
 const colorScale = d3.scaleLinear()
-    .domain([99, 20, 0])
+    .domain([100, 20, 0])
     .range(d3.schemePiYG[3]);
 
 // Load external data and boot
@@ -27,15 +32,18 @@ Promise.all([
     d3.json("assets/data/world.geojson"),
     d3.csv("assets/data/share-co2-emissions-vs-population.csv", {typed: true}, function(d) {
         if (d.Code) {
-            data.set(d.Code, 20 * d.co2 / d.popn)
+            data.set(d.Code, Math.min(100, 20 * d.co2 / d.popn));
         }
     })
 ]).then(function(loadData){
-    let topo = loadData[0]
+    let topo = loadData[0];
 
     // Draw the map
-    svg.append("g")
-        .selectAll("path")
+    let g = svg.append("g");
+    if (width < subWidth) {
+        g = g.attr("transform", "scale(" + width / subWidth + ")");
+    }
+        g.selectAll("path")
         .data(topo.features)
         .join("path")
         // draw each country
@@ -46,5 +54,9 @@ Promise.all([
         .attr("fill", function (d) {
             d.total = data.get(d.id) || 0;
             return colorScale(d.total);
-        })
-})
+        });
+});
+
+if (width < subWidth) {
+    document.getElementById("find_me").style.height = "" + 491.02 * width / subWidth;
+}

@@ -96,3 +96,8 @@ function loadNavBar() {
         document.getElementById('navCollapseButton').classList.add("navbar-light");
     }
 }
+
+function svgSize(svg) {
+    let parent = document.getElementById("svg_parent");
+    svg.style.width = "" + parent.clientWidth;
+}
