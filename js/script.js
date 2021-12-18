@@ -1,4 +1,5 @@
-const regexMatches = {"name": /^.+$/g, "email": /^[\w.\-_]*[\w\-_]@[\w\-_.]*\w$/g};
+const regexMatches = {"name": /^.+$/g, "email": /^[\w.\-_]*[\w\-_]@[\w\-_.]*\w$/g}; // regex matches used for the sign-up pop over form
+let originalWindowWidth = 0; // Original width of the container with the SVG inside it
 
 /**
  * Opens a random published article on arxiv
@@ -97,7 +98,32 @@ function loadNavBar() {
     }
 }
 
+/**
+ * Sets the width of an element to be the same as the parent and updates originalWindowWidth
+ * @param svg the svg to have the size set
+ */
 function svgSize(svg) {
     let parent = document.getElementById("svg_parent");
     svg.style.width = "" + parent.clientWidth;
+    originalWindowWidth = parent.clientWidth;
+}
+
+/**
+ * Dynamic resizing of the choropleth SVG
+ * Changes style attributes of the svg and D3 attributes of the g tag inside the SVG
+ */
+function resizeSVG() {
+    let width = document.getElementById("svg_parent").clientWidth;
+    let svg = document.getElementById("find_me");
+    let svgBody = d3.select("g");
+    if (width < subWidth) {
+        svg.style.width = "" + width;
+        svg.style.height = "" + 491.02 * width / subWidth;
+        svgBody.attr("transform", "scale(" + width / subWidth + ") translate(0,0)");
+    } else {
+        svg.style.width = "" + width;
+        svg.style.height = "" + 491.02;
+        svgBody.attr("transform", "scale(1) translate(" + (width - subWidth) / 2 + ", 0)");
+
+    }
 }
