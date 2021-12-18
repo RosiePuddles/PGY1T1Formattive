@@ -29,6 +29,8 @@
     "default-case-last": "warn",
     // Allow empty functions
     "no-empty": "off",
-    "no-unused-vars": "off"
+    "no-unused-vars": "off",
+    // Turning this on makes visualise.js faile becuase of how D3 is imported
+    "no-undef": "off"
   }
 }
