@@ -14,12 +14,6 @@ width = document.getElementById("svg_parent").clientWidth;
 const path = d3.geoPath();
 const projection = d3.geoNaturalEarth1().center([0,0]);
 
-if (width < subWidth) {
-    projection.translate([subWidth / 2, height / 2]);
-} else {
-    projection.translate([width / 2, height / 2]);
-}
-
 // Data and color scale
 let data = new Map();
 const colorScale = d3.scaleLinear()
@@ -39,9 +33,12 @@ Promise.all([
     let topo = loadData[0];
 
     // Draw the map
-    let g = svg.append("g");
+    let g = svg.append("g")
+        .attr("id", "svg_body");
     if (width < subWidth) {
         g = g.attr("transform", "scale(" + width / subWidth + ")");
+    } else {
+        g = g.attr("transform", "translate(" + (width - subWidth) / 2 + ", 0)");
     }
         g.selectAll("path")
         .data(topo.features)

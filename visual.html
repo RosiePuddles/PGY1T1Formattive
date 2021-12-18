@@ -20,7 +20,7 @@
     <link href="assets/images/favicons/32.png" rel="icon" sizes="32x32" type="image/png"/>
     <link href="assets/images/favicons/16.png" rel="icon" sizes="16x16" type="image/png"/>
 </head>
-<body class="d-flex flex-column min-vh-100" onload="loadNavBar()">
+<body class="d-flex flex-column min-vh-100" onload="loadNavBar()" onresize="resizeSVG()">
 <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand logo" href="index.html"><img alt="logo" height="50" src="assets/images/icon_small.webp"/></a>
@@ -40,7 +40,6 @@
     </p>
     <div class="align-content-center" id="svg_parent">
         <svg id="find_me" height="491.02" onload="svgSize(this)">
-            <use xlink:href="#square" transform="scale(20)"/>
         </svg>
     </div>
 </div>
