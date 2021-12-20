@@ -1,7 +1,8 @@
 /**
- * File That's only used for data visualisation using D3
+ * File that's only used for data visualisation using D3
  * Code from https://www.d3-graph-gallery.com/graph/choropleth_basic.html
  * Additions and alterations made to allow the svg to be correctly sized upon loading
+ * and to allow for dynamic resizing and positioning
  */
 
 // The svg

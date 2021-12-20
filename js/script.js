@@ -49,8 +49,9 @@ function signUpSelect() {
 }
 
 /**
- *
- * @param node
+ * Resets an input box to remove the invalid input styling.
+ * Called when the input field is altered
+ * @param node {object} Input field to remove formatting from
  */
 function myReset(node) {
     node.classList.remove("invalid_input");
@@ -100,7 +101,7 @@ function loadNavBar() {
 
 /**
  * Sets the width of an element to be the same as the parent and updates originalWindowWidth
- * @param svg the svg to have the size set
+ * @param svg {object} The svg to have the size set and saved
  */
 function svgSize(svg) {
     let parent = document.getElementById("svg_parent");
