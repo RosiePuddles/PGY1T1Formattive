@@ -7,6 +7,8 @@ This site includes:
 - Dynamic colour themes for light and dark colour themes
 - Data visualisation using choropleths made with D3
 
+Please also note, there may be some parts of the site that while visually are correct, the content doesn't really make any sense; such as dates that don't exist. Unless grammatical, this is intentional.
+
 ### Contents
 - [Running](#runninginstalling)
 - [Acknowledgements](#acknowledgements)
@@ -22,6 +24,7 @@ then open index.html. Alternatively visit [the website](https://rosiepuddles.git
 
 ## Acknowledgements
 This would not have been possible without:
+- Data from Hannah Ritchie and Max Roser (2020) - "CO₂ and Greenhouse Gas Emissions". Published online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions' [Online Resource]. Dataset has been pruned to only use the most recent data
 - The bootstrap documentation
 - Photographs:
   - ["A meeting"](https://www.flickr.com/photos/gsapponline/24773105486)
